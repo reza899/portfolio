@@ -1,16 +1,32 @@
 import styled from "styled-components"
 
-export const FooterWrapper = styled.section`
-	width: calc(100vw - 96px);
+export const FooterWrapper = styled.footer`
+  width: 100%;
+  padding: 4rem 0 2rem;
+  margin-top: 8rem;
+  background: #0F1624;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(180deg, transparent 0%, #0F1624 100%);
+  }
+`
+
+export const FooterContent = styled.div`
+  width: 100%;
   max-width: 1040px;
-  padding: 2rem 48px 40px;
-  margin: 1rem auto;
-  box-sizing: content-box;
-
-
+  margin: 0 auto;
+  padding: 0 48px;
+  
   @media ${props => props.theme.breakpoints.sm} {
-    padding: 0 16px 48px;
-    width: calc(100vw - 32px);
+    padding: 0 16px;
   }
 `
 

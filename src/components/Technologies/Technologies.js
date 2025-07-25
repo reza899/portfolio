@@ -1,5 +1,7 @@
 import React from "react";
-import { DiFirebase, DiReact, DiZend } from "react-icons/di";
+import { DiFirebase, DiReact, DiDotnet } from "react-icons/di";
+import { SiMicrosoft } from "react-icons/si";
+import { AiFillCode } from "react-icons/ai";
 import {
   Section,
   SectionDivider,
@@ -17,29 +19,52 @@ import {
 const Technologies = () => (
   <Section id="tech">
     <SectionDivider />
-    <SectionTitle main>Technologies</SectionTitle>
+    <SectionTitle main>Technologies & Expertise</SectionTitle>
     <SectionText>
-      I've worked with a range of technologies in the web development world.
-      From Back-end to Front-end
+      Over 10+ years of experience across the full technology stack, from enterprise backend systems to modern AI-powered frontends. Currently specializing in integrating LLMs and AI technologies into production applications.
     </SectionText>
     <List>
       <ListItem>
         <DiReact size="3rem" />
         <ListContainer>
-          <ListTitle>Front-End</ListTitle>
+          <ListTitle>Frontend</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            React, Typescript and Redux
+            React, Next.js, TypeScript <br />
+            Redux, MobX, Material UI <br />
+            Tailwind CSS, Styled Components
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiFirebase size="3rem" />
+        <DiDotnet size="3rem" />
         <ListContainer>
-          <ListTitle>Back-End</ListTitle>
+          <ListTitle>Backend</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            .Net Core, EFCore and SQL Server Database
+            C#, .NET 8, ASP.NET <br />
+            Python, FastAPI, gRPC <br />
+            Microservices, Clean Architecture
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <AiFillCode size="3rem" />
+        <ListContainer>
+          <ListTitle>AI & LLMs</ListTitle>
+          <ListParagraph>
+            LangChain, LangGraph, OpenAI API <br />
+            Azure AI, Semantic Kernel <br />
+            RAG, Vector DBs, Agentic Architecture
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <SiMicrosoft size="3rem" />
+        <ListContainer>
+          <ListTitle>Enterprise</ListTitle>
+          <ListParagraph>
+            Azure DevOps, Dynamics CRM <br />
+            SharePoint, Enterprise Architecture <br />
+            Scrum, TDD, CI/CD Pipelines
           </ListParagraph>
         </ListContainer>
       </ListItem>

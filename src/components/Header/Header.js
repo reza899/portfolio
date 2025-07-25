@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { AiFillGithub, AiTwotoneEdit, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiTwotoneEdit, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { DiCssdeck } from "react-icons/di";
 
 import {
@@ -13,7 +13,12 @@ import {
   Span,
 } from "./HeaderStyles";
 
-const Header = () => (
+const Header = () => {
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:' + 'reza.bozorgi899' + '@' + 'gmail.com';
+  };
+
+  return (
   <Container>
     <Div1>
       <Link href="/">
@@ -44,7 +49,7 @@ const Header = () => (
 
       <li>
         <Link href="#about">
-          <NavLink>About</NavLink>
+          <NavLink>Timeline</NavLink>
         </Link>
       </li>
     </Div2>
@@ -58,8 +63,12 @@ const Header = () => (
       <SocialIcons href="https://dev.to/rezab">
         <AiTwotoneEdit size="3rem" />
       </SocialIcons>
+      <SocialIcons href="#" onClick={handleEmailClick}>
+        <AiOutlineMail size="3rem" />
+      </SocialIcons>
     </Div3>
   </Container>
-);
+  );
+};
 
 export default Header;
