@@ -2,7 +2,7 @@ import React from 'react';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 
 import { SocialIcons } from '../Header/HeaderStyles';
-import { CompanyContainer, FooterWrapper, FooterContent, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import { CompanyContainer, FooterWrapper, FooterContent, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer, FooterProfileImage, ProfileColumn } from './FooterStyles';
 
 const Footer = () => {
   const handleEmailClick = () => {
@@ -43,6 +43,14 @@ const Footer = () => {
               Projects
             </LinkItem>
           </LinkColumn>
+          <ProfileColumn>
+            <FooterProfileImage 
+              src="/images/profile.jpg" 
+              alt="Professional headshot of Reza Bozorgi, Senior Full-stack AI Engineer, wearing glasses and a patterned shirt, smiling at the camera"
+              data-content-type="profile-photo"
+              data-person="Reza Bozorgi"
+            />
+          </ProfileColumn>
         </LinkList>
         <SocialIconsContainer>
           <CompanyContainer>

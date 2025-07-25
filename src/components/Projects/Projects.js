@@ -41,40 +41,60 @@ const Projects = () => {
   return (
     <Section nopadding id="projects">
       <SectionDivider />
-      <SectionTitle main>Projects</SectionTitle>
-      <GridContainer>
+      <section data-section="projects" data-content-type="portfolio">
+        <SectionTitle main as="h2" role="heading" aria-level="2">Projects</SectionTitle>
+        <GridContainer data-content-type="project-list">
         {projects.map((project, index) => {
           const isAutoSDLC = project.title.includes("AutoSDLC");
           const isLogo = isLogoImage(project.image);
           
           return (
-            <BlogCard key={`project-${project.id}`} className={isAutoSDLC ? "featured" : ""}>
+            <BlogCard 
+              key={`project-${project.id}`} 
+              className={isAutoSDLC ? "featured" : ""}
+              data-project-id={project.id}
+              data-project-type={aiTags.some(tag => project.tags.includes(tag)) ? "ai-project" : "traditional-project"}
+              data-featured={isAutoSDLC}
+            >
               <ImgContainer background={getImageBackground(project)}>
                 <Img 
                   src={project.image} 
-                  alt={project.title}
+                  alt={`${project.title} - ${project.description.substring(0, 100)}...`}
                   isLogo={isLogo}
+                  data-image-type={isLogo ? "logo" : "screenshot"}
                 />
               </ImgContainer>
               <CardContent>
                 <TitleContent>
-                  {isAutoSDLC && <FeaturedBadge>Featured Project</FeaturedBadge>}
-                  <HeaderThree>{project.title}</HeaderThree>
+                  {isAutoSDLC && <FeaturedBadge data-badge-type="featured">Featured Project</FeaturedBadge>}
+                  <HeaderThree role="heading" aria-level="3" data-project-title={project.title}>
+                    {project.title}
+                  </HeaderThree>
                   <Hr />
                 </TitleContent>
-                <CardInfo>{project.description}</CardInfo>
-                <TagList>
+                <CardInfo data-content-type="project-description">
+                  {project.description}
+                </CardInfo>
+                <TagList data-content-type="technology-tags">
                   {project.tags.map((tag, i) => (
                     <Tag 
                       key={i} 
                       className={aiTags.includes(tag) ? "ai-tag" : ""}
+                      data-technology={tag}
+                      data-tag-type={aiTags.includes(tag) ? "ai-technology" : "standard-technology"}
                     >
                       {tag}
                     </Tag>
                   ))}
                 </TagList>
-                <UtilityList>
-                  <ExternalLinks href={project.source} target="_blank" rel="noopener noreferrer">
+                <UtilityList data-content-type="project-links">
+                  <ExternalLinks 
+                    href={project.source} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    data-link-type="source-code"
+                    aria-label={`View source code for ${project.title}`}
+                  >
                     <AiFillGithub />
                     Code
                   </ExternalLinks>
@@ -84,6 +104,8 @@ const Projects = () => {
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="secondary"
+                      data-link-type="live-demo"
+                      aria-label={`View live demo of ${project.title}`}
                     >
                       <AiOutlineLink />
                       Demo
@@ -94,7 +116,8 @@ const Projects = () => {
             </BlogCard>
           );
         })}
-      </GridContainer>
+        </GridContainer>
+      </section>
     </Section>
   );
 };

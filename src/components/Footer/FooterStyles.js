@@ -120,6 +120,7 @@ export const Slogan = styled.p`
 export const SocialContainer = styled.div`
 	display: flex;
   align-items: center;
+  gap: 2rem;
 
 	@media ${props => props.theme.breakpoints.md}{
 		justify-content: center;
@@ -128,11 +129,45 @@ export const SocialContainer = styled.div`
 	}
 `
 
+export const FooterProfileImage = styled.img`
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(270deg, #13ADC7 0%, #6978D1 50%, #945DD6 100%) border-box;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+  
+  @media ${props => props.theme.breakpoints.md} {
+    width: 120px;
+    height: 120px;
+  }
+  
+  @media ${props => props.theme.breakpoints.sm} {
+    width: 100px;
+    height: 100px;
+  }
+`
+
+export const ProfileColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 220px;
+  width: 100%;
+`
+
 
 export const LinkList = styled.ul`
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: grid;
-	grid-template-columns: repeat(3, minmax(85px, 220px));
+	grid-template-columns: repeat(4, minmax(85px, 220px));
 	gap: 40px;
   padding: 40px 0 28px;
 

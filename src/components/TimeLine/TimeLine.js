@@ -45,29 +45,46 @@ const Timeline = () => {
   return (
     <Section id="about">
       <SectionDivider />
-      <SectionTitle main>Career Journey</SectionTitle>
-      <SectionText>
-        A decade-long journey of growth and evolution in software engineering, from enterprise solutions to cutting-edge AI integration.
-      </SectionText>
-      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
+      <section data-section="timeline" data-content-type="career-history">
+        <SectionTitle main as="h2" role="heading" aria-level="2">Career Journey</SectionTitle>
+        <SectionText data-content-type="timeline-summary">
+          A decade-long journey of growth and evolution in software engineering, from enterprise solutions to cutting-edge AI integration.
+        </SectionText>
+        <CarouselContainer 
+          ref={carouselRef} 
+          onScroll={handleScroll}
+          role="region"
+          aria-label="Career timeline"
+          data-content-type="timeline-carousel"
+        >
         <>
           {TimeLineData.map((item, index) => (
             <CarouselMobileScrollNode
               key={index}
-              final={index === TOTAL_CAROUSEL_COUNT - 1}>
+              final={index === TOTAL_CAROUSEL_COUNT - 1}
+              data-timeline-item={index}
+            >
               <CarouselItem
                 index={index}
                 id={`carousel__item-${index}`}
                 active={activeItem}
-                onClick={(e) => handleClick(e, index)}>
-                <CarouselItemTitle>
+                onClick={(e) => handleClick(e, index)}
+                data-year={item.year}
+                data-timeline-entry="true"
+                role="article"
+                aria-label={`Career milestone ${item.year}`}
+              >
+                <CarouselItemTitle data-content-type="timeline-year" role="heading" aria-level="3">
                   {`${item.year}`}
                   <CarouselItemImg
                     width="208"
                     height="6"
                     viewBox="0 0 208 6"
                     fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    data-decorative="true"
+                  >
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
@@ -88,26 +105,35 @@ const Timeline = () => {
                     </defs>
                   </CarouselItemImg>
                 </CarouselItemTitle>
-                <CarouselItemText>{item.text}</CarouselItemText>
+                <CarouselItemText data-content-type="timeline-description" data-year={item.year}>
+                  {item.text}
+                </CarouselItemText>
               </CarouselItem>
             </CarouselMobileScrollNode>
           ))}
         </>
-      </CarouselContainer>
-      <CarouselButtons>
-        {TimeLineData.map((item, index) => {
-          return (
-            <CarouselButton
-              key={index}
-              index={index}
-              active={activeItem}
-              onClick={(e) => handleClick(e, index)}
-              type="button">
-              <CarouselButtonDot active={activeItem} />
-            </CarouselButton>
-          );
-        })}
-      </CarouselButtons>
+        </CarouselContainer>
+        <CarouselButtons role="tablist" aria-label="Timeline navigation" data-content-type="timeline-navigation">
+          {TimeLineData.map((item, index) => {
+            return (
+              <CarouselButton
+                key={index}
+                index={index}
+                active={activeItem}
+                onClick={(e) => handleClick(e, index)}
+                type="button"
+                role="tab"
+                aria-selected={activeItem === index}
+                aria-label={`Go to year ${item.year}`}
+                data-timeline-button={index}
+                data-year={item.year}
+              >
+                <CarouselButtonDot active={activeItem} aria-hidden="true" />
+              </CarouselButton>
+            );
+          })}
+        </CarouselButtons>
+      </section>
     </Section>
   );
 };
