@@ -69,6 +69,7 @@ const Home = () => {
               "sameAs": [
                 "https://www.linkedin.com/in/reza-bozorgi/",
                 "https://github.com/reza899",
+                "https://x.com/rb__899",
                 "https://dev.to/rezab"
               ],
               "knowsAbout": [
