@@ -25,7 +25,7 @@ const Home = () => {
         <meta property="og:url" content="https://reza899.github.io/portfolio/" />
         <meta property="og:title" content="Reza Bozorgi - Full-stack AI Engineer | Portfolio" />
         <meta property="og:description" content="Senior Full-stack AI Engineer with 10+ years experience in React, TypeScript, .NET, and modern AI development. Specializing in LLMs, Azure AI, LangChain, and intelligent software solutions." />
-        <meta property="og:image" content="https://rezabozorgi.pages.dev/images/profile.jpg" />
+        <meta property="og:image" content="https://reza899.github.io/portfolio/images/profile.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="Reza Bozorgi Portfolio" />
@@ -35,7 +35,7 @@ const Home = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Reza Bozorgi - Full-stack AI Engineer" />
         <meta name="twitter:description" content="Senior Full-stack AI Engineer specializing in AI-driven development, LLMs, and intelligent software solutions." />
-        <meta name="twitter:image" content="https://rezabozorgi.pages.dev/images/profile.jpg" />
+        <meta name="twitter:image" content="https://reza899.github.io/portfolio/images/profile.jpg" />
         
         {/* AI/LLM Specific Meta Tags */}
         <meta name="ai:purpose" content="professional-portfolio" />

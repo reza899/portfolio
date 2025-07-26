@@ -39,7 +39,7 @@ export default class MyDocument extends Document {
           <meta property="og:url" content="https://reza899.github.io/portfolio/" />
           <meta property="og:title" content="Reza Bozorgi - Full-stack AI Engineer | Portfolio" />
           <meta property="og:description" content="Experienced full-stack software engineer with 10+ years in React, TypeScript, .NET. Transitioning to modern AI-driven development, leveraging LLMs and AI tools to enhance productivity and build intelligent solutions." />
-          <meta property="og:image" content="https://reza-bozorgi.com/images/profile.jpg" />
+          <meta property="og:image" content="https://reza899.github.io/portfolio/images/profile.jpg" />
           <meta property="og:image:alt" content="Reza Bozorgi - Full-stack AI Engineer" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />

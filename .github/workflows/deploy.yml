@@ -30,6 +30,7 @@ jobs:
         run: npm run build
         env:
           NODE_OPTIONS: '--openssl-legacy-provider'
+          DEPLOY_TARGET: 'github-pages'
           
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
