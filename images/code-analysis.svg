@@ -1,0 +1,26 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#0f3460"/>
+  
+  <!-- Code brackets -->
+  <path d="M120 100 L80 150 L120 200" stroke="#13ADC7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M280 100 L320 150 L280 200" stroke="#13ADC7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Analysis lines -->
+  <rect x="150" y="120" width="60" height="6" rx="3" fill="#945DD6"/>
+  <rect x="150" y="135" width="100" height="6" rx="3" fill="#6978D1"/>
+  <rect x="150" y="150" width="80" height="6" rx="3" fill="#13ADC7"/>
+  <rect x="150" y="165" width="90" height="6" rx="3" fill="#945DD6"/>
+  
+  <!-- Magnifying glass -->
+  <circle cx="200" cy="150" r="30" stroke="#00DBD8" stroke-width="4" fill="none" opacity="0.6"/>
+  <line x1="223" y1="173" x2="240" y2="190" stroke="#00DBD8" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Dots representing analysis -->
+  <circle cx="100" cy="80" r="3" fill="#945DD6" opacity="0.6"/>
+  <circle cx="120" cy="70" r="3" fill="#13ADC7" opacity="0.6"/>
+  <circle cx="140" cy="85" r="3" fill="#6978D1" opacity="0.6"/>
+  
+  <circle cx="260" cy="220" r="3" fill="#945DD6" opacity="0.6"/>
+  <circle cx="280" cy="210" r="3" fill="#13ADC7" opacity="0.6"/>
+  <circle cx="300" cy="225" r="3" fill="#6978D1" opacity="0.6"/>
+</svg>

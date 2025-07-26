@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# AI/LLM specific directives
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+Sitemap: https://reza899.github.io/portfolio/sitemap.xml
+
+# Optimize crawling
+Crawl-delay: 1

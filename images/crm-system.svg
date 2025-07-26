@@ -1,0 +1,37 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#1e2936"/>
+  
+  <!-- User profiles -->
+  <circle cx="100" cy="80" r="25" fill="#2d4059" stroke="#13ADC7" stroke-width="2"/>
+  <circle cx="100" cy="70" r="10" fill="#13ADC7"/>
+  <path d="M85 85 Q100 95 115 85" fill="#13ADC7"/>
+  
+  <circle cx="200" cy="80" r="25" fill="#2d4059" stroke="#945DD6" stroke-width="2"/>
+  <circle cx="200" cy="70" r="10" fill="#945DD6"/>
+  <path d="M185 85 Q200 95 215 85" fill="#945DD6"/>
+  
+  <circle cx="300" cy="80" r="25" fill="#2d4059" stroke="#6978D1" stroke-width="2"/>
+  <circle cx="300" cy="70" r="10" fill="#6978D1"/>
+  <path d="M285 85 Q300 95 315 85" fill="#6978D1"/>
+  
+  <!-- Connection lines -->
+  <path d="M125 80 L175 80" stroke="#00DBD8" stroke-width="2" opacity="0.5"/>
+  <path d="M225 80 L275 80" stroke="#00DBD8" stroke-width="2" opacity="0.5"/>
+  <path d="M100 105 L200 150" stroke="#13ADC7" stroke-width="1" opacity="0.3"/>
+  <path d="M200 105 L200 150" stroke="#945DD6" stroke-width="1" opacity="0.3"/>
+  <path d="M300 105 L200 150" stroke="#6978D1" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Central database -->
+  <rect x="160" y="150" width="80" height="60" rx="10" fill="#2d4059" stroke="#00DBD8" stroke-width="2"/>
+  <rect x="170" y="160" width="60" height="5" rx="2.5" fill="#13ADC7" opacity="0.7"/>
+  <rect x="170" y="170" width="60" height="5" rx="2.5" fill="#945DD6" opacity="0.7"/>
+  <rect x="170" y="180" width="60" height="5" rx="2.5" fill="#6978D1" opacity="0.7"/>
+  <rect x="170" y="190" width="60" height="5" rx="2.5" fill="#00DBD8" opacity="0.7"/>
+  
+  <!-- Analytics chart -->
+  <rect x="80" y="230" width="240" height="50" rx="5" fill="#2d4059" stroke="#13ADC7" stroke-width="1" opacity="0.5"/>
+  <rect x="90" y="260" width="20" height="15" fill="#13ADC7" opacity="0.7"/>
+  <rect x="120" y="250" width="20" height="25" fill="#945DD6" opacity="0.7"/>
+  <rect x="150" y="255" width="20" height="20" fill="#6978D1" opacity="0.7"/>
+  <rect x="180" y="245" width="20" height="30" fill="#00DBD8" opacity="0.7"/>
+</svg>
