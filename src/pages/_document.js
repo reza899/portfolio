@@ -36,7 +36,7 @@ export default class MyDocument extends Document {
           {/* Open Graph tags */}
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content="Reza Bozorgi - Portfolio" />
-          <meta property="og:url" content="https://reza-bozorgi.com" />
+          <meta property="og:url" content="https://reza899.github.io/portfolio/" />
           <meta property="og:title" content="Reza Bozorgi - Full-stack AI Engineer | Portfolio" />
           <meta property="og:description" content="Experienced full-stack software engineer with 10+ years in React, TypeScript, .NET. Transitioning to modern AI-driven development, leveraging LLMs and AI tools to enhance productivity and build intelligent solutions." />
           <meta property="og:image" content="https://reza-bozorgi.com/images/profile.jpg" />

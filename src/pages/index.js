@@ -18,11 +18,11 @@ const Home = () => {
         <meta name="author" content="Reza Bozorgi" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href="https://rezabozorgi.pages.dev/" />
+        <link rel="canonical" href="https://reza899.github.io/portfolio/" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://rezabozorgi.pages.dev/" />
+        <meta property="og:url" content="https://reza899.github.io/portfolio/" />
         <meta property="og:title" content="Reza Bozorgi - Full-stack AI Engineer | Portfolio" />
         <meta property="og:description" content="Senior Full-stack AI Engineer with 10+ years experience in React, TypeScript, .NET, and modern AI development. Specializing in LLMs, Azure AI, LangChain, and intelligent software solutions." />
         <meta property="og:image" content="https://rezabozorgi.pages.dev/images/profile.jpg" />
@@ -59,7 +59,7 @@ const Home = () => {
               "alternateName": "Reza",
               "jobTitle": ["Senior Full-stack AI Engineer", "Full-stack Developer", "AI Engineer"],
               "description": "Experienced software engineer with over ten years of expertise specializing in AI-driven development, full-stack applications, and intelligent solutions using React, TypeScript, .NET, and modern AI technologies.",
-              "url": "https://rezabozorgi.pages.dev/",
+              "url": "https://reza899.github.io/portfolio/",
               "image": {
                 "@type": "ImageObject",
                 "url": "https://rezabozorgi.pages.dev/images/profile.jpg",

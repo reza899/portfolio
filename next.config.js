@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   // Enable static export for better SEO and performance
   trailingSlash: true,
+  
+  // GitHub Pages deployment config
+  assetPrefix: isProd ? '/portfolio/' : '',
+  basePath: isProd ? '/portfolio' : '',
   
   // Image optimization settings
   images: {

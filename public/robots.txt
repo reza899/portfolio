@@ -17,7 +17,7 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
-Sitemap: https://rezabozorgi.pages.dev/sitemap.xml
+Sitemap: https://reza899.github.io/portfolio/sitemap.xml
 
 # Optimize crawling
 Crawl-delay: 1
