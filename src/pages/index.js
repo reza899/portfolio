@@ -62,7 +62,7 @@ const Home = () => {
               "url": "https://reza899.github.io/portfolio/",
               "image": {
                 "@type": "ImageObject",
-                "url": "https://rezabozorgi.pages.dev/images/profile.jpg",
+                "url": "https://reza899.github.io/portfolio/images/profile.jpg",
                 "width": 280,
                 "height": 280
               },
@@ -130,7 +130,7 @@ const Home = () => {
               "programmingLanguage": ["JavaScript", "TypeScript", "C#", "Python"],
               "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "https://rezabozorgi.pages.dev/"
+                "@id": "https://reza899.github.io/portfolio/"
               }
             })
           }}

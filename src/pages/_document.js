@@ -50,12 +50,12 @@ export default class MyDocument extends Document {
           <meta name="twitter:creator" content="@reza_bozorgi" />
           <meta name="twitter:title" content="Reza Bozorgi - Full-stack AI Engineer | Portfolio" />
           <meta name="twitter:description" content="Experienced full-stack software engineer with 10+ years in React, TypeScript, .NET. Transitioning to modern AI-driven development, leveraging LLMs and AI tools." />
-          <meta name="twitter:image" content="https://reza-bozorgi.com/images/profile.jpg" />
+          <meta name="twitter:image" content="https://reza899.github.io/portfolio/images/profile.jpg" />
           <meta name="twitter:image:alt" content="Reza Bozorgi - Full-stack AI Engineer" />
           
           {/* Additional SEO tags */}
           <meta name="robots" content="index, follow" />
-          <link rel="canonical" href="https://reza-bozorgi.com" />
+          <link rel="canonical" href="https://reza899.github.io/portfolio/" />
           
           {/* AI/LLM specific tags */}
           <meta name="ai-content-type" content="portfolio" />
