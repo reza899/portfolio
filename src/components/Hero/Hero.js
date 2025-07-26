@@ -21,6 +21,17 @@ const HeroSectionTitle = styled(SectionTitle)`
   }
 `;
 
+const ResponsiveSectionText = styled(SectionText)`
+  line-height: 1.5;
+  min-width: 900px;
+  width: 100%;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    min-width: unset;
+    max-width: 800px;
+  }
+`;
+
 const Hero = () => {
   const handleGetInTouch = () => {
     window.open('https://www.linkedin.com/in/reza-bozorgi/', '_blank');
@@ -49,7 +60,7 @@ const Hero = () => {
             Full-stack AI Engineer
           </span>
         </HeroSectionTitle>
-        <SectionText style={{ lineHeight: '1.5', minWidth: '900px' }}>
+        <ResponsiveSectionText>
           Passionate and experienced software engineer with over ten years of
           expertise in designing and building full-stack applications using the
           Microsoft ecosystem, React, and TypeScript. Known for analyzing
@@ -58,7 +69,7 @@ const Hero = () => {
           development, leveraging LLMs and tools like Azure AI, LangChain, and
           OpenAI APIs to enhance productivity and build intelligent solutions in
           daily software engineering tasks.
-        </SectionText>
+        </ResponsiveSectionText>
         <Button onClick={handleGetInTouch}>Get In Touch</Button>
       </LeftSection>
     </Section>

@@ -27,6 +27,15 @@ import { projects } from "../../constants/constants";
 const Projects = () => {
   const aiTags = ["AI", "LLM", "NLP", "Agentic AI", "Multi-Agent", "Document Processing", "Code Analysis"];
   
+  // Helper function to get the correct image path for GitHub Pages
+  const getImagePath = (path) => {
+    const isGitHubPages = typeof window !== 'undefined' 
+      ? window.location.hostname === 'reza899.github.io'
+      : process.env.DEPLOY_TARGET === 'github-pages';
+    const basePath = isGitHubPages ? '/portfolio' : '';
+    return `${basePath}${path}`;
+  };
+  
   const isLogoImage = (imagePath) => {
     return imagePath && (imagePath.includes('.svg') || imagePath.includes('Logo'));
   };
@@ -58,7 +67,7 @@ const Projects = () => {
             >
               <ImgContainer background={getImageBackground(project)}>
                 <Img 
-                  src={project.image} 
+                  src={getImagePath(project.image)}
                   alt={`${project.title} - ${project.description.substring(0, 100)}...`}
                   isLogo={isLogo}
                   data-image-type={isLogo ? "logo" : "screenshot"}

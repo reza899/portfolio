@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { AiFillGithub, AiTwotoneEdit, AiFillLinkedin, AiOutlineMail, AiFillTwitterCircle } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail, AiFillTwitterCircle } from "react-icons/ai";
 import { DiCssdeck } from "react-icons/di";
 
 import {
@@ -78,13 +78,6 @@ const Header = () => {
         rel="noopener noreferrer"
       >
         <AiFillTwitterCircle size="3rem" />
-      </SocialIcons>
-      <SocialIcons 
-        href="https://dev.to/rezab"
-        data-social-platform="dev-to"
-        aria-label="Visit Reza Bozorgi's Dev.to profile"
-      >
-        <AiTwotoneEdit size="3rem" />
       </SocialIcons>
       <SocialIcons 
         href="#" 
