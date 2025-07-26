@@ -44,9 +44,9 @@ const Home = () => {
         <meta name="ai:experience-level" content="senior" />
         <meta name="ai:primary-technologies" content="React,TypeScript,DotNet,Python,LangChain,OpenAI,Azure-AI" />
         
-        <link rel="icon" href="/favicon.ico" sizes="32x32" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="icon" href="/portfolio/favicon.ico" sizes="32x32" />
+        <link rel="icon" href="/portfolio/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/portfolio/favicon.ico" />
         
         {/* Structured Data - JSON-LD */}
         <script

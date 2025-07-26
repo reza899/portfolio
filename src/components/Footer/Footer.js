@@ -9,6 +9,16 @@ const Footer = () => {
     window.location.href = 'mailto:' + 'reza.bozorgi899' + '@' + 'gmail.com';
   };
 
+  // Helper function to get the correct image path for GitHub Pages
+  const getImagePath = (path) => {
+    // Check if we're on GitHub Pages by looking at the current URL or use environment variable
+    const isGitHubPages = typeof window !== 'undefined' 
+      ? window.location.hostname === 'reza899.github.io'
+      : process.env.DEPLOY_TARGET === 'github-pages';
+    const basePath = isGitHubPages ? '/portfolio' : '';
+    return `${basePath}${path}`;
+  };
+
   return (
     <FooterWrapper>
       <FooterContent>
@@ -45,7 +55,7 @@ const Footer = () => {
           </LinkColumn>
           <ProfileColumn>
             <FooterProfileImage 
-              src="/images/profile.jpg" 
+              src={getImagePath("/images/profile.jpg")}
               alt="Professional headshot of Reza Bozorgi, Senior Full-stack AI Engineer, wearing glasses and a patterned shirt, smiling at the camera"
               data-content-type="profile-photo"
               data-person="Reza Bozorgi"
