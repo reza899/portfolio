@@ -54,19 +54,19 @@ const Projects = () => {
         <SectionTitle main as="h2" role="heading" aria-level="2">Projects</SectionTitle>
         <GridContainer data-content-type="project-list">
         {projects.map((project, index) => {
-          const isAutoSDLC = project.title.includes("AutoSDLC");
+          const isFeatured = project.id === 0;
           const isLogo = isLogoImage(project.image);
-          
+
           return (
-            <BlogCard 
-              key={`project-${project.id}`} 
-              className={isAutoSDLC ? "featured" : ""}
+            <BlogCard
+              key={`project-${project.id}`}
+              className={isFeatured ? "featured" : ""}
               data-project-id={project.id}
               data-project-type={aiTags.some(tag => project.tags.includes(tag)) ? "ai-project" : "traditional-project"}
-              data-featured={isAutoSDLC}
+              data-featured={isFeatured}
             >
               <ImgContainer background={getImageBackground(project)}>
-                <Img 
+                <Img
                   src={getImagePath(project.image)}
                   alt={`${project.title} - ${project.description.substring(0, 100)}...`}
                   isLogo={isLogo}
@@ -75,7 +75,7 @@ const Projects = () => {
               </ImgContainer>
               <CardContent>
                 <TitleContent>
-                  {isAutoSDLC && <FeaturedBadge data-badge-type="featured">Featured Project</FeaturedBadge>}
+                  {isFeatured && <FeaturedBadge data-badge-type="featured">Featured Project</FeaturedBadge>}
                   <HeaderThree role="heading" aria-level="3" data-project-title={project.title}>
                     {project.title}
                   </HeaderThree>
