@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: "Branching Chat: Agentic AI Knowledge Management System",
+    description:
+      "Intelligent conversation system that connects knowledge across all user sessions through semantic search and retrieval. As architect and lead developer, designed, built, and deployed a complete end-to-end intelligent knowledge management platform from the ground up. Designed a sophisticated RAG-based multi-agent system using Microsoft Agent Framework with specialized agents for complex queries. Built high-performance Python/FastAPI backend with FAISS-based vector store and semantic chunking for cross-session context retrieval. Engineered modern React/TypeScript frontend with interactive session visualization using React Flow. Managed full CI/CD pipeline and deployed on Azure AI (Foundry).",
+    image: "/images/branching-chat.svg",
+    tags: ["Agentic AI", "Multi-Agent Systems", "RAG", "Python", "FastAPI", "React", "TypeScript", "Azure AI", "LangChain", "FAISS"],
+    source: "#",
+    visit: "#",
+    id: 0,
+  },
+  {
     title: "AutoSDLC - Agentic AI Development System",
     description:
       "An innovative agentic AI solution that revolutionizes software development by autonomously handling the entire SDLC. Features multi-agent architecture for code generation, testing, deployment, and maintenance. Leverages advanced LLMs to understand requirements, architect solutions, and deliver production-ready code with minimal human intervention.",
@@ -7,7 +17,7 @@ export const projects = [
     tags: ["Agentic AI", "LLM", "Multi-Agent", "Python", "Automation", "DevOps"],
     source: "https://github.com/reza899/AutoSDLC",
     visit: "https://github.com/reza899/AutoSDLC",
-    id: 0,
+    id: 1,
   },
   {
     title: "Insurance Intake Agent",
@@ -17,7 +27,7 @@ export const projects = [
     tags: ["AI", "Document Processing", "NLP", "Python", "Automation"],
     source: "https://github.com/reza899/insurance-intake-agent",
     visit: "https://github.com/reza899/insurance-intake-agent",
-    id: 1,
+    id: 2,
   },
   {
     title: "CodexQ - Code Intelligence Platform",
@@ -27,7 +37,7 @@ export const projects = [
     tags: ["AI", "Code Analysis", "TypeScript", "React", "Node.js"],
     source: "https://github.com/reza899/CodexQ",
     visit: "https://github.com/reza899/CodexQ",
-    id: 2,
+    id: 3,
   },
   {
     title: "Freight App",
@@ -37,7 +47,7 @@ export const projects = [
     tags: ["React", "TypeScript", ".Net Core", "EF Core", "MobX"],
     source: "https://github.com",
     visit: "https://github.com",
-    id: 3,
+    id: 4,
   },
   {
     title: "CRM vLight",
@@ -47,7 +57,7 @@ export const projects = [
     tags: ["React", "JavaScript", ".Net Core", "CRM"],
     source: "https://github.com",
     visit: "https://github.com",
-    id: 4,
+    id: 5,
   },
 ];
 
@@ -55,6 +65,6 @@ export const TimeLineData = [
   { year: 2015, text: "Started as Software Engineer, developing enterprise solutions with .NET, customizing Dynamics CRM & SharePoint" },
   { year: 2019, text: "Promoted to Senior Software Engineer & Team Lead at Index Holding, leading 5-member cross-functional team" },
   { year: 2021, text: "Joined QPage as Senior Frontend Developer, building AI-powered video interview platform with OpenAI integration" },
-  { year: 2022, text: "Senior Software Engineer at ASML, migrating legacy systems to microservices and implementing metrology solutions" },
-  { year: 2024, text: "Expanding into AI Engineering, integrating LLMs with LangChain, Azure AI, and building intelligent solutions" },
+  { year: 2022, text: "Senior Software Engineer at ASML (via Accenture). Worked on YRC team with React/TypeScript and C#/.NET, delivered Focus Metrology features, migrated legacy systems to .NET 8 microservices with gRPC, and built internal tools for accelerating testing workflows" },
+  { year: 2025, text: "Full-Stack AI Engineer at Accenture. Architect & Project Lead for 'Branching Chat' intelligent knowledge management platform. Built RAG-based multi-agent system using Microsoft Agent Framework, Python/FastAPI/LangChain backend with FAISS, React/TypeScript frontend, deployed on Azure AI (Foundry) with CI/CD" },
 ];

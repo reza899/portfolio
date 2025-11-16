@@ -61,14 +61,8 @@ const Hero = () => {
           </span>
         </HeroSectionTitle>
         <ResponsiveSectionText>
-          Passionate and experienced software engineer with over ten years of
-          expertise in designing and building full-stack applications using the
-          Microsoft ecosystem, React, and TypeScript. Known for analyzing
-          customer needs, crafting scalable solutions, and writing maintainable,
-          production-quality code. Transitioning towards modern AI-driven
-          development, leveraging LLMs and tools like Azure AI, LangChain, and
-          OpenAI APIs to enhance productivity and build intelligent solutions in
-          daily software engineering tasks.
+          Passionate and experienced full-stack AI engineer with over ten years of expertise in designing and building production-ready systems using Python, C#, React, TypeScript, and the Microsoft ecosystem. Known for analyzing customer needs, crafting scalable architectures, and delivering maintainable, high-quality code across the full stack.
+          Proficient in clean architecture, cloud-native development, and agile methodologies, working end-to-end across LLMs, multi-agent systems, RAG pipelines, Azure AI, LangChain, and OpenAI APIs to build intelligent, real-world solutions. Continuously strengthening architecture skills, enabling clear technical strategy and full ownership of AI-driven products.
         </ResponsiveSectionText>
         <Button onClick={handleGetInTouch}>Get In Touch</Button>
       </LeftSection>
